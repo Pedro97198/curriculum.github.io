@@ -27,19 +27,19 @@ body {
 }
 
 .education-item {
-    position: relative; /* Agregar esta línea */
+    position: relative; 
     background-color: white;
     border-radius: 10px;
     padding: 30px;
     margin-bottom: 30px;
     text-align: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Corregí la propiedad box-shadow */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .back-arrow {
     position: absolute;
-    top: 0; /* Ajusta el top para que esté alineado con el borde superior del contenedor */
-    left: -50px; /* Cambia el left para que esté fuera del contenedor de la flecha */
+    top: 0; 
+    left: -50px; 
     line-height: 30px;
     text-align: center;
     font-size: 24px;

@@ -32,7 +32,7 @@ body {
 .profile-card.show {
     opacity: 1;
     transform: translateY(0);
-    max-width: 1200px; /* Duplicamos el ancho */
+    max-width: 1200px; 
 }
 
 
