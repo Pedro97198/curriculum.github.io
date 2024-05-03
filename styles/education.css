@@ -27,24 +27,26 @@ body {
 }
 
 .education-item {
-	background-color: white;
-	border-radius: 10px;
-	padding: 30px;
-	margin-bottom: 30px;
-	text-align: center;
-	box-shadow: 0px 0px 1
+    position: relative; /* Agregar esta línea */
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Corregí la propiedad box-shadow */
 }
 
 .back-arrow {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
+    position: absolute;
+    top: 0; /* Ajusta el top para que esté alineado con el borde superior del contenedor */
+    left: -50px; /* Cambia el left para que esté fuera del contenedor de la flecha */
     line-height: 30px;
     text-align: center;
     font-size: 24px;
-    color: #fff;
-    background-color: violet;
+    color:violet;
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
-  }
+}
+
