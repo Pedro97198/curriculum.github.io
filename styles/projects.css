@@ -1,0 +1,98 @@
+body,
+header {
+    background: linear-gradient(135deg, #222, #111);
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.project-wrapper {
+    background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 600px;
+    width: calc(33.333% - 2rem);
+    transition: all 0.3s ease;
+}
+
+.project-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    color: violet;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.project-icon {
+    font-size: 2rem;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.project-wrapper:hover .project-icon {
+    transform: scale(1.2);
+}
+
+.project-video {
+    margin-bottom: 1rem;
+}
+
+.project-video iframe {
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.project-wrapper:hover .project-video iframe {
+    transform: scale(1.05);
+}
+
+.project-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .project-wrapper {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .project-wrapper {
+        width: 100%;
+    }
+}
+
+.back-arrow {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    background-color: violet;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}

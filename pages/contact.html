@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form contacto</title>
+  <link rel="stylesheet" href="../styles/contact.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="text">
+    Contacta conmigo
+  </div>
+  <div class="form-row">
+    <div class="input-data">
+      <a href="../index.html" class="back-arrow">&#8592;</a>
+    </div>
+  </div>
+  <form action="#">
+    <div class="form-row">
+      <div class="input-data">
+        <input type="text" id="name" required>
+        <div class="underline"></div>
+        <label for="name">Nombre</label>
+      </div>
+      <div class="input-data">
+        <input type="text" id="last-name" required>
+        <div class="underline"></div>
+        <label for="">Apellidos</label>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="input-data">
+        <input type="text" id="email" required>
+        <div class="underline"></div>
+        <label for="">Correo electronico</label>
+      </div>
+      <div class="input-data">
+        <input type="tel" id="phone" required>
+        <div class="underline"></div>
+        <label for="">Telefono</label>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="input-data textarea">
+        <textarea rows="8" cols="80" required></textarea>
+        <br />
+        <div class="underline"></div>
+        <label for="">Escribe tu mensaje</label>
+      </div>
+    </div>
+    <div class="form-row submit-btn">
+      <div class="input-data">
+        <div class="inner"></div>
+        <input type="submit" value="Submit" id="submit-btn">
+      </div>
+    </div>
+  </form>
+  <div id="success-message" style="display: none; color: green;">Mensaje enviado</div>
+</div>
+
+<script src="../java/contact-submit.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.profile-card {
+    background-color: #272727;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    padding: 30px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+}
+
+.profile-card.show {
+    opacity: 1;
+    transform: translateY(0);
+    max-width: 1200px; /* Duplicamos el ancho */
+}
+
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color:violet;
+}
+
+.profile-header p {
+    font-size: 18px;
+    color: violet;
+}
+
+.profile-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: violet;
+}
+
+.profile-content p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.profile-content ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.profile-content li {
+    margin-bottom: 10px;
+    color:violet;
+}
+
+
+.profile-content .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-content .skills-list li {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: violet;
+}
+
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill-item {
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 180px;
+}
+
+
+.back-arrow {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    background-color: violet;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
